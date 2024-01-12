@@ -147,13 +147,13 @@
                 if (data && data.data && Array.isArray(data.data)) {
                     products = data.data;
                 } else {
-                    console.error('Error: Invalid data format or missing products property', data);
+                    console.error(data);
                     products = [];
                 }
 
                 renderProducts(products);
             } catch (error) {
-                console.error('Error fetching or processing data:', error);
+                console.error(error);
             }
         }
 
